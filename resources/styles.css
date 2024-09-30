@@ -1,0 +1,177 @@
+/*Universal*/
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    color: rgb(25, 25, 104);
+}
+
+body {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(200, 227, 238));
+}
+
+h1, h2{
+    font-family: "Cinzel Decorative";
+}
+
+p, span, h3 {
+    font-family: "IBM Plex Mono";
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 8rem;
+}
+
+
+/*Header*/
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+    background-image: url(./images/background\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+}
+
+a {
+    color: rgb(25, 25, 104);
+    text-decoration: none;
+    text-align: center;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: rgb(105, 79, 24) ;
+}
+
+
+nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding-left: 3.5rem; 
+  }
+
+nav a {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+} 
+
+/*Main*/
+.name {
+    font-size: 6rem;
+    text-align: center;
+}
+
+/*About*/
+
+.container {
+    display: flex;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+
+
+.picture {
+    margin-left: 3rem;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+    height: 60%;
+}
+
+.paragraph {
+    width: 50%;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*Skills section*/
+
+.skills h3 {
+    text-align: center;
+}
+
+
+/*Projects Section*/
+
+#project-1, #project-2, #project-3 {
+    width: 25rem;
+    height: auto;
+    margin: 2rem;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+}
+
+#project-1:hover, #project-2:hover, #project-3:hover {
+    box-shadow:  0 4px 8px 0 rgba(36, 33, 187, 0.99), 0 6px 20px 0 rgba(36, 33, 187, 0.99);
+}
+
+#project-1:active, #project-2:active, #project-3:active {
+    box-shadow: none;
+}
+
+
+/*Button*/
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    text-align: center;
+    
+}
+
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 4px;
+    background-color: rgb(5, 9, 66);
+    color: white;
+    width: auto;
+    padding: 1.25rem 4.25rem;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+    font-family: "IBM Plex Mono";
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    color: rgb(105, 79, 24);
+    background-color: rgb(114, 217, 235);
+}
+
+.button:active { 
+    box-shadow: none;
+    margin-top: 2px;
+    margin-bottom: -2px;
+}
+
+
+
+/*Footer*/
+footer {
+    margin-top: 10%;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
