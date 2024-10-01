@@ -8,6 +8,7 @@
         <script src="./resources/skills.js" defer></script>
         <title>Portfolio Project</title>
         <meta charset="UTF-8">
+        <script defer src="./resources/interactive.js"></script>
     </head>
     <body>
 
@@ -50,21 +51,42 @@
                             and will be doing more of their JavaScript courses in the near futrue. 
                             As someone who enjoys playing games in my free time, I am looking forward to developing games using JavaScript.<br>
                     
-                            <br>I also enjoy having philosophical conversations and watching anime 
-                            (specifically those of the Isekai genre). My favorite color is blue 
-                            and my favoirte fruit is pineapple and my favorite genre of music is jazz (more specifically, saxophone and piano jazz). <br>
-                    
                             <br>
                             
                         </p>
                 
                     </div>
-                    <div></div>
+
                         <img src="./resources/images/Photo of me.jpg" alt="Photo of Noel" class="picture">
-                    </div>
+                
+                </div>
                
+            </div>
+
+            <div class="likes-section">
+
+                <div class="likes heading">
+
+                    <h2>What i like</h2>
+                
+                </div>
+
+                <div class="likeBTN container">
+                    
+                    <button class="likes button" id="likesBTN">Click here to see the things I like!</button>
+
                 </div>
                 
+                <div class="likes container">
+                     
+                    <div>
+                        <p id="displayMessage"></p>
+                    </div>
+
+                    
+                </div>
+
+              
             </div>
 
             <div id="skills-section">
@@ -90,27 +112,17 @@
                 <div class="projects heading">
                     
                     <h2>Projects</h2>
+                    <p>Click on a project below to see the code on GitHub!</p>
 
                 </div>
-                
+            
                 <div class="projects container">
-                    <div class="project-1">
+                  
+                       <img id="project-1" src="./resources/images/Favicon.png" alt="Favicon website Screenshot">
 
-                        <img id="project-1" src="./resources/images/Favicon.png" alt="Favicon website Screenshot">
+                       <img id="project-2" src="./resources/images/Message generator.png" alt="Message generator website Screenshot">
 
-                    </div>
-
-                    <div class="project-2">
-
-                        <img id="project-2" src="./resources/images/Message generator.png" alt="Message generator website Screenshot">
-
-                    </div>
-
-                    <div class="project-3">
-
-                        <img id="project-3" src="./resources/images/Style guide.png" alt="Style guide website Screenshot">
-
-                    </div>
+                       <img id="project-3" src="./resources/images/Portfolio.png" alt="Style guide website Screenshot">
 
                 </div>
 
@@ -120,9 +132,16 @@
             <div class="contact container">
 
                 <div class="button-container">
-                    <button class="button" id="button">
-                        Contact me!
-                    </button>
+
+                   <a href="./contact.html">
+
+                        <button class="button" id="button">
+
+                            Contact me!
+
+                        </button>
+
+                   </a>
     
                 </div>
     
