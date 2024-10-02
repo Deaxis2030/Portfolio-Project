@@ -107,15 +107,20 @@ nav a {
 
 /*Likes*/
 
-.likeBTN {
-    justify-content: center;
-}
-
 .likes {
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+.likes h2 {
+    margin-top: 15rem;
+}
+
+.likeBTN {
+    justify-content: center;
+}
+
 
 /*Skills section*/
 
@@ -123,17 +128,25 @@ nav a {
     justify-content: center;
 }
 
+.skills h2 {
+    margin-top: 15rem;
+}
+
 .skills h3 {
     text-align: center;
 }
 
 
+
 /*Projects Section*/
-
-
 
 .projects {
     justify-content: center;
+}
+
+.projects h2 {
+    margin-top: 15rem;
+    margin-bottom: 7rem;
 }
 
 
@@ -200,7 +213,7 @@ nav a {
 
 /*Footer*/
 footer {
-    margin-top: 10%;
+    margin-top: 30%;
     text-align: center;
     font-weight: 600;
     font-style: italic;
