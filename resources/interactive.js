@@ -2,24 +2,20 @@ const project1 = document.querySelector ("#project-1");
 const project2 = document.querySelector ("#project-2");
 const project3 = document.querySelector ("#project-3");
 const likeButton = document.querySelector ("#likesBTN");
-const displayMessage = document.querySelector ("#displayMessage")
+const displayMessage = document.querySelector ("#displayMessage");
 
 project1.onclick = function () {
-    window.location = "https://github.com/Deaxis2030/flexbox-business-site-starting"
-}
+    window.location = "https://deaxis2030.github.io/flexbox-business-site-starting/"
+};
 
 project2.onclick = function () {
-    window.location = "https://github.com/Deaxis2030/Message-Generator"
-}
+    window.location = "https://deaxis2030.github.io/Message-Generator/"
+};
 
 project3.onclick = function () {
     window.location = "https://github.com/Deaxis2030/flexbox-business-site-starting"
-}
+};
 
-
-const randNum = () => {
-    return Math.floor ((Math.random()*9)+1);
- };
  const changer = num => {
      
      switch (num){
@@ -64,22 +60,31 @@ const randNum = () => {
              return "something went wrong";
              break;
  
-     }
- }
- 
- 
+     };
+ };
+
+
+ let value = 0;
+
  likeButton.addEventListener("click", ()=>{
-    
-     displayMessage.innerText = changer(randNum());
+
+    if (value < 9) {
+        value++; 
+    }   else {
+        value = 1;
+    };
+
+     displayMessage.innerText = changer(value);
      displayMessage.style.opacity = 0;
      setTimeout(() => {
          displayMessage.style.opacity = 1;
-         displayMessage.style.transition = "opacity 2s";
+         displayMessage.style.transition = "opacity 1s";
          setTimeout(() => {
              displayMessage.style.opacity = 0;
-             displayMessage.style.transition = "opacity 6s";
-         }, 5000);
+             displayMessage.style.transition = "opacity 1s";
+         }, 3000);
      }, 1000);
      
-     
+    
+     console.log (value);
  });
