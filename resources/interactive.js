@@ -1,9 +1,11 @@
+//Variables from the DOM
 const project1 = document.querySelector ("#project-1");
 const project2 = document.querySelector ("#project-2");
 const project3 = document.querySelector ("#project-3");
 const likeButton = document.querySelector ("#likesBTN");
 const displayMessage = document.querySelector ("#displayMessage");
 
+//Onclick function linking project photos to their websites 
 project1.onclick = function () {
     window.location = "https://deaxis2030.github.io/flexbox-business-site-starting/"
 };
@@ -16,6 +18,8 @@ project3.onclick = function () {
     window.location = "https://github.com/Deaxis2030/flexbox-business-site-starting"
 };
 
+
+//Function that provides the list of things shown when likes button is clicked
  const changer = num => {
      
      switch (num){
@@ -63,9 +67,10 @@ project3.onclick = function () {
      };
  };
 
-
+//Variable used to iterate through list of likes
  let value = 0;
 
+ //Click event listener that lets the likes button show fade in and fade out of likes
  likeButton.addEventListener("click", ()=>{
 
     if (value < 9) {
@@ -76,6 +81,8 @@ project3.onclick = function () {
 
      displayMessage.innerText = changer(value);
      displayMessage.style.opacity = 0;
+     
+     //fade in and fade out function 
      setTimeout(() => {
          displayMessage.style.opacity = 1;
          displayMessage.style.transition = "opacity 1s";
