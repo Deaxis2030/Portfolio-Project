@@ -5,12 +5,17 @@ html {
     color: rgb(25, 25, 104);
 }
 
+header .mobile{
+    display: none;
+}
+
 body {
     background-image: linear-gradient(rgb(255, 255, 255), rgb(200, 227, 238));
 }
 
 h1, h2{
     font-family: "Cinzel Decorative";
+    text-shadow:  3px 3px 3px rgb(66, 139, 168);
 }
 
 p, span, h3 {
@@ -33,11 +38,13 @@ p, span, h3 {
 
 
 
+
 /*Header*/
 
-header .content {
+.content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1.875rem;
     background-image: url(./images/background\ 3.jpg);
     background-repeat: no-repeat;
@@ -53,7 +60,7 @@ header a {
     text-align: center;
     font-family: "IBM Plex Mono";
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -63,25 +70,27 @@ header a:hover {
 }
 
 
-nav {
+.desktop nav {
+    display: flex;
+    
+    width: auto;
+}
+
+.desktop ul {
     display: flex;
     justify-content: end;
-    width: 100%;
-    
-}
-
-nav ul {
-    display: flex;
     list-style-type: none;
+    padding-right: 3rem;
 }
 
-nav li {
+.desktop li {
     padding-left: 3.5rem; 
   }
 
-nav a {
+ul a {
     border-left: 1px solid black;
     border-right: 1px solid black;
+    text-shadow:  1px 1px 0px rgba(253, 253, 253, 1);
 } 
 
 /*Main*/
@@ -128,6 +137,9 @@ nav a {
     justify-content: center;
 }
 
+.messageContainer {
+    height: 5rem;
+}
 
 /*Button*/
 
@@ -234,6 +246,7 @@ nav a {
     font-size: 1.2rem;
     text-transform: uppercase;
     list-style-position: inside;
+    border: none;
 }
 
 .details a:hover {
@@ -250,4 +263,85 @@ footer {
     text-align: center;
     font-weight: 600;
     font-style: italic;
+}
+
+
+/*Responsive code*/
+
+
+@media only screen and (max-width: 768px) {
+
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: flex;
+        justify-content: center;
+     }
+
+    .mobile nav {
+        display: flex;
+        width: auto;
+        
+    }
+    
+    .mobile ul {
+        display: flex;
+        list-style-type: none;
+        padding-inline-start: 0rem;
+    }
+    
+    .mobile li {
+        padding: 1rem; 
+        justify-content: center;
+      }
+    .name {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+  
+    .container{
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+
+    .picture {
+        margin: 0rem;
+    }
+
+    .paragraph {
+        margin-left: 4rem;
+    }
+
+    p {
+        margin-top: 0rem;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        margin-bottom: 0rem;
+    }
+
+    .likes h2, .skills h2 {
+        margin-top: 4rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+    p {
+        font-size: 1.5rem;
+    }
+
 }

@@ -4,7 +4,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="./resources/styles.css" rel="stylesheet">
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0"> 
         <script src="./resources/skills.js" defer></script>
         <title>Portfolio Project</title>
         <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 
         <!--Header Section-->
         <header>
-            <div class="content">
+            <div class="desktop content">
                 <a href="#main.html" id="name-logo"><img src="./resources/images/Personal Logo edited.png" alt="Personal logo"></a>
                 <nav>
                     <ul>
@@ -25,6 +25,18 @@
                 </nav>
 
             </div>
+
+            <div class="mobile content">
+                <nav>
+                    <ul>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#projects-section">Projects</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
         </header>
         
         <!--Main section-->
@@ -77,9 +89,9 @@
 
                 </div>
                 
-                <div class="likes container">
+                <div class="likes container" id="likesContainer">
                      
-                    <div>
+                    <div class="messageContainer">
                         <p id="displayMessage"></p>
                     </div>
 
