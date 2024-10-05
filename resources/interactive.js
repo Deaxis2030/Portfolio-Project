@@ -15,7 +15,7 @@ project2.onclick = function () {
 };
 
 project3.onclick = function () {
-    window.location = "https://github.com/Deaxis2030/flexbox-business-site-starting"
+    window.location = " https://deaxis2030.github.io/Portfolio-Project/"
 };
 
 
@@ -92,6 +92,4 @@ project3.onclick = function () {
          }, 3000);
      }, 1000);
      
-    
-     console.log (value);
  });

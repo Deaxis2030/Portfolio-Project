@@ -319,7 +319,9 @@ footer {
     }
 
     .paragraph {
-        margin-left: 4rem;
+        margin-left: 3rem;
+        width: 80%;
+        text-align: center;
     }
 
     p {
@@ -333,6 +335,13 @@ footer {
 
     .likes h2, .skills h2 {
         margin-top: 4rem;
+    }
+
+    #displayMessage {
+        font-size: 1rem;
+    }
+    .messageContainer {
+        text-align: center;
     }
 
 }
