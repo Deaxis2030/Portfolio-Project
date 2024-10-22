@@ -41,7 +41,7 @@ project3.onclick = function () {
              break;
          
          case 5:
-             return "Chicken!!!";
+             return "CHICKEN!!!";
              break;
          
          case 6:
